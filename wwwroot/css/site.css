@@ -1,0 +1,113 @@
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+    /* Table header styles */
+    .table th {
+        background-color: #cce5ff; /* Apply aliceblue to table header */
+        text-align: left;
+        padding: 12px;
+        border: 1px solid #ddd;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Table body styles */
+    .table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+    }
+
+    /* Apply aliceblue to all rows */
+    .table tr {
+        background-color: aliceblue;
+    }
+/* Button style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    /* Button hover effect */
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+    /* Label styles */
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        color: #333; /* Text color for labels */
+    }
+
+/* Input styles */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* Apply white background to form controls */
+}
+
+
+/* Header 1 styles */
+h1,h2 {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #cce5ff; /* Light blue background for h1 */
+    color: #333;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }

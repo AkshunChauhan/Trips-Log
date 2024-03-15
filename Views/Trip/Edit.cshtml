@@ -1,0 +1,90 @@
+﻿@model Trip
+
+@{
+    ViewBag.Title = "Edit Trip";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Destination">Destination*</label>
+        <input asp-for="Destination" class="form-control" />
+        <span asp-validation-for="Destination" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Accommodation">Accommodation</label>
+        <input asp-for="Accommodation" class="form-control" />
+        <span asp-validation-for="Accommodation" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AccommodationPhone">Accommodation Phone</label>
+        <input asp-for="AccommodationPhone" class="form-control" />
+        <span asp-validation-for="AccommodationPhone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AccommodationEmail">Accommodation Email</label>
+        <input asp-for="AccommodationEmail" class="form-control" />
+        <span asp-validation-for="AccommodationEmail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="ThingToDo1">Things To Do 1</label>
+        <input type="text" id="ThingToDo1" name="ThingToDo1" class="form-control" value="@Model.ThingToDo1" />
+    </div>
+    <div class="form-group">
+        <label for="ThingToDo2">Things To Do 2</label>
+        <input type="text" id="ThingToDo2" name="ThingToDo2" class="form-control" value="@Model.ThingToDo2" />
+    </div>
+    <div class="form-group">
+        <label for="ThingToDo3">Things To Do 3</label>
+        <input type="text" id="ThingToDo3" name="ThingToDo3" class="form-control" value="@Model.ThingToDo3" />
+    </div>
+
+    <input type="hidden" asp-for="TripId" />
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Delete" asp-route-id="@Model.TripId" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this trip?')">Delete</a>
+    <a asp-controller="Trip" asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+<style>
+    /* Apply form styles */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Adjust button styles */
+    .btn {
+        margin-right: 10px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        color: #fff;
+    }
+
+    /* Adjust label styles */
+    label {
+        font-weight: bold;
+    }
+</style>
